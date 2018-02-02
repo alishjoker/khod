@@ -8,8 +8,8 @@ from googletrans import Translator
 from urllib.parse import urlencode
 from io import BytesIO, UnsupportedOperation
 
-client = LineClient()
-#client = LineClient(id='freetimeine@gmail.com', passwd='aliahmadi05')
+#client = LineClient()
+client = LineClient(id='freetimeine@gmail.com', passwd='aliahmadi05')
 #client = LineClient(authToken='Epli3SwPXgXEiv9aC1g4.05R8zlieHgCxZPveUCyO9a.zJrG50JRA3CCFbLOJHHAWJlENffu/vJpSOJvgPFkqok=') 
 client.log("token=Epli3SwPXgXEiv9aC1g4.05R8zlieHgCxZPveUCyO9a.zJrG50JRA3CCFbLOJHHAWJlENffu/vJpSOJvgPFkqok=" + str(client.authToken))
 #========================================================
