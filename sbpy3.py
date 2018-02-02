@@ -9,9 +9,9 @@ from urllib.parse import urlencode
 from io import BytesIO, UnsupportedOperation
 
 client = LineClient()
-#client = LineClient(id='freetimeine@gmail.com', passwd='aliahmadi05')
-#client = LineClient(authToken='Epli3SwPXgXEiv9aC1g4.05R8zlieHgCxZPveUCyO9a.zJrG50JRA3CCFbLOJHHAWJlENffu/vJpSOJvgPFkqok=') 
-client.log("token=Epli3SwPXgXEiv9aC1g4.05R8zlieHgCxZPveUCyO9a.zJrG50JRA3CCFbLOJHHAWJlENffu/vJpSOJvgPFkqok=" + str(client.authToken))
+#client = LineClient(id='EMAILMU', passwd='PASSWORDMU')
+#client = LineClient(authToken='TOKENMU') 
+client.log("Auth Token : " + str(client.authToken))
 #========================================================
 channel = LineChannel(client)
 client.log("Channel Access Token : " + str(channel.channelAccessToken))
@@ -29,7 +29,7 @@ backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
 #====================================
 
-helpMessage =""" ༺༽།☤ⵓః•Alish ⌬Π•ఃⵓ☤།༼༻
+helpMessage =""" ༺༽།☤ⵓః•LIβΣRΔTI⌬Π•ఃⵓ☤།༼༻
 ╭════════╬♥╬════════╮
                        ʜᴇʟᴘ menu
 ╰════════╬♥╬════════╯
@@ -78,7 +78,7 @@ helpMessage =""" ༺༽།☤ⵓః•Alish ⌬Π•ఃⵓ☤།༼༻
           🔪JANGAN ADA TYPO 🔪
 ╰════════╬♥╬════════╯
 ╭════════╬♥╬════════╮
-     http://line.me/ti/p/~joker.alish
+     http://line.me/ti/p/KTS6MCiOZe
 ╰════════╬♥╬════════╯
 """
 
