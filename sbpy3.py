@@ -29,9 +29,9 @@ backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
 #====================================
 
-helpMessage =""" ༺༽།☤ⵓః•LIβΣRΔTI⌬Π•ఃⵓ☤།༼༻
+helpMessage =""" ༺༽།☤ⵓః•ALISH JKKERఃⵓ☤།༼༻
 ╭════════╬♥╬════════╮
-                       ʜᴇʟᴘ menu
+                       Alish Bot Menu
 ╰════════╬♥╬════════╯
 ╭════════╬♥╬════════╮
 ║♪「Myhelp」
@@ -75,10 +75,12 @@ helpMessage =""" ༺༽།☤ⵓః•LIβΣRΔTI⌬Π•ఃⵓ☤།༼༻
 ║♪「 Mode:public」
 ╰════════╬♥╬════════╯
 ╭════════╬♥╬════════╮
-          🔪JANGAN ADA TYPO 🔪
+          🔪 ﷽؏ݪے؁ݜʝ۝🙁KΞℜ؁جـꪆڪ؁ࢪمﷺ🔪
 ╰════════╬♥╬════════╯
 ╭════════╬♥╬════════╮
-     http://line.me/ti/p/KTS6MCiOZe
+     http://line.me/ti/p/~joker.alish  
+     
+     ‌telegram Bot : t.me/tlgdownloadbot 
 ╰════════╬♥╬════════╯
 """
 
@@ -264,8 +266,8 @@ while True:
                                         test = st[i]
                                         result = test['post']['postInfo']['postId']
                                         channel.like(str(sender), str(result), likeType=random.choice(typel))
-                                        channel.comment(str(sender), str(result), 'Auto Like by LIBERATION\n http://line.me/ti/p/KTS6MCiOZe')
-                                    client.sendText(receiver, 'Done Like+Comment '+str(len(st))+' Post From' + str(s))
+                                        channel.comment(str(sender), str(result), 'Auto Like by alish Joker \n http://line.me/ti/p/joker.alish')
+                                    client.sendText(receiver, 'Like + Comment '+str(len(st))+' Post From' + str(s))
                                 except Exception as e:
                                     client.sendText(receiver, str(e))
                             elif 'gc ' in text.lower():
@@ -359,12 +361,12 @@ while True:
                                     data = r.text
                                     data = json.loads(data)
                                     for song in data:
-                                        hasil = 'This is Your Music\n'
+                                        hasil = 'این اهنگ تو\n'
                                         hasil += 'Judul : ' + song[0]
                                         hasil += '\nDurasi : ' + song[1]
-                                        hasil += '\nLink Download : ' + song[4]
+                                        hasil += '\nلینک دانلود  : ' + song[4]
                                         client.sendMessage(msg.to, hasil)
-                                        client.sendMessage(msg.to, "Please Wait for Music...")
+                                        client.sendMessage(msg.to, "علان اهنگ بصورت فایل میفرستم کمی صبر  کن...")
                                         client.sendAudioWithURL(msg.to, song[4])
                                 except Exception as njer:
                                         client.sendMessage(msg.to, str(njer))                             
@@ -807,7 +809,7 @@ while True:
                                 pass
                             else:
                                 cctv['sidermem'][op.param1] += "\n~ " + Name
-                                pref=['eh ada','hai kak','aloo..','nah','lg ngapain','halo','sini kak']
+                                pref=['Hello','salam','bala Bash .','nah','lg ngapain','halo','sini kak']
                                 client.sendText(op.param1, str(random.choice(pref))+' '+Name)
                         else:
                             pass
