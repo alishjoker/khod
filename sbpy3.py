@@ -29,9 +29,11 @@ backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
 #====================================
 
-helpMessage =""" ༺༽།☤ⵓః•ALISH JKKERఃⵓ☤།༼༻
+helpMessage =""" ༺༽།☤ⵓః•ＡＬＩＳＨＪＯＫＥＲＢＯＴ☤།༼༻
 ╭════════╬♥╬════════╮
-                       Alish Bot Menu
+                     My Sticker :  Alish Eyes
+https://line.me/S/sticker/1949307
+LINE 2018
 ╰════════╬♥╬════════╯
 ╭════════╬♥╬════════╮
 ║♪「Myhelp」
@@ -74,14 +76,15 @@ helpMessage =""" ༺༽།☤ⵓః•ALISH JKKERఃⵓ☤།༼༻
 ║♪「 Mode:self」
 ║♪「 Mode:public」
 ╰════════╬♥╬════════╯
-╭════════╬♥╬════════╮
-          🔪 ﷽؏ݪے؁ݜʝ۝🙁KΞℜ؁جـꪆڪ؁ࢪمﷺ🔪
-╰════════╬♥╬════════╯
-╭════════╬♥╬════════╮
-     http://line.me/ti/p/~joker.alish  
-     
-     ‌telegram Bot : t.me/tlgdownloadbot 
-╰════════╬♥╬════════╯
+اینستاگرام ما
+http://instagram.com/_u/alishjoker
+
+پیج رسمی ( اموزش ) 
+https://line.me/R/ti/p/%40any3675r
+
+ربات همه کاره و تبدیلگر تلگرام فایل 
+http://t.me/tlgdownloadbot
+
 """
 
 poll = LinePoll(client)
@@ -101,7 +104,7 @@ read = {
 
 myProfile = {
 	"displayName": "",
-	"statusMessage": "",
+	"statusMessage": "سلام خوش اومدی به ادد لیستم و ربات سلف هستم",
 	"pictureStatus": ""
 }
 
@@ -165,7 +168,7 @@ while True:
                             if text.lower() == 'me':
                                 client.sendMessage(receiver, None, contentMetadata={'mid': sender}, contentType=13)
                             elif text.lower() == 'mymid':
-                                client.sendMessage(msg.to,"[MID]\n" +  clientMID)
+                                client.sendMessage(msg.to,"مید\n" +  clientMID)
                             elif text.lower() == 'myname':
                                 me = client.getContact(clientMID)
                                 client.sendMessage(msg.to,"[DisplayName]\n" + me.displayName)
@@ -209,7 +212,7 @@ while True:
                                         break
                                     try:
                                         client.cloneContactProfile(contact)
-                                        client.sendMessage(msg.to, "Berhasil clone member tunggu beberapa saat sampai profile berubah")
+                                        client.sendMessage(msg.to, "انجام شد !")
                                     except:
                                         client.sendMessage(msg.to, "Gagal clone member")
                             elif text.lower() == 'restoreprofile':
@@ -219,7 +222,7 @@ while True:
                                     clientProfile.pictureStatus = str(myProfile["pictureStatus"])
                                     client.updateProfileAttribute(8, clientProfile.pictureStatus)
                                     client.updateProfile(clientProfile)
-                                    client.sendMessage(msg.to, "Berhasil restore profile tunggu beberapa saat sampai profile berubah")
+                                    client.sendMessage(msg.to, "پروفایل قبلی برگشت کردی ")
                                 except:
                                     client.sendMessage(msg.to, "Gagal restore profile")
 #====================================================
@@ -278,7 +281,7 @@ while True:
                                     cmid = client.getContact(u).mid
                                     cstatus = client.getContact(u).statusMessage
                                     cpic = client.getContact(u).picturePath
-                                    client.sendText(receiver, 'Nama : '+cname+'\nMID : '+cmid+'\nStatus Msg : '+cstatus+'\nPicture : http://dl.profile.line.naver.jp'+cpic)
+                                    client.sendText(receiver, 'اسم : '+cname+'\nایدی ( مید) : '+cmid+'\nاستاتوس : '+cstatus+'\nلینک پروفایل : http://dl.profile.line.naver.jp'+cpic)
                                     client.sendMessage(receiver, None, contentMetadata={'mid': cmid}, contentType=13)
                                     if client.getContact(u).videoProfile != None:
                                         client.sendVideoWithURL(receiver, 'http://dl.profile.line.naver.jp'+cpic+'/vp.small')
@@ -341,7 +344,7 @@ while True:
                                 except Exception as e:
                                     client.sendText(receiver, str(e))
 #============================================================#HELPSTART#=========================================================#
-                            elif text.lower() == 'myhelp':
+                            elif text.lower() == '/help':
                                 client.sendText(msg.to,helpMessage)
                                 print ("[COMMAND] HELP")
                                 
@@ -349,7 +352,7 @@ while True:
                             elif text.startswith("imagetext "):
                                 sep = text.split(" ")
                                 textnya = text.replace(sep[0] + " ","")   
-                                urlnya = "http://chart.apis.google.com/chart?chs=480x80&cht=p3&chtt=" + textnya + "&chts=FFFFFF,70&chf=bg,s,000000"
+                                urlnya = "http://chart.apis.google.com/chart?chs=480x80&cht=p3&chtt=" + textnya + "&chts=FFFFFF,70&chf=bg,s,010000"
                                 client.sendImageWithURL(msg.to, urlnya)   
                                 
                             elif text.startswith("musik "):
@@ -372,7 +375,7 @@ while True:
                                         client.sendMessage(msg.to, str(njer))                             
 #============================================================#MODE / RESTART#======================================================#
                             elif text.lower() == 'restart':
-                                client.sendText(receiver, '「Bot restart」')
+                                client.sendText(receiver, '「ALISH JOKER ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,!,!!,!,!,,!,!,!,!,!,!,!,!,!,!,!,!,!,!,!,!,!,!,!,!!,!」')
                                 print ("BOT RESTART")
                                 restart_program()
                             elif text.lower() == 'friendlist':
@@ -416,12 +419,12 @@ while True:
                                     except:
                                         gCreator = "Error"
                                     client.sendMessage(receiver, None, contentMetadata={'mid': gCreator}, contentType=13)
-                                    client.sendText(msg.to, "「Group Creator」 : " + gCreator1)
+                                    client.sendText(msg.to, "「سازنده گروه」 : " + gCreator1)
                                     client.tag(receiver, gCreator)
 #===================
                             elif "tr:" in msg.text:
                                 try:
-                                    isi = msg.text.split(":")
+                                    isi = msg.text.split("En:Fa")
                                     translator = Translator()
                                     hasil = translator.translate(isi[2], dest=isi[1])
                                     A = hasil.text                               
@@ -430,9 +433,9 @@ while True:
                                     client.sendText(receiver, str(e))
                             elif text.lower() == 'speed':
                                 start = time.time()
-                                client.sendText(receiver, "TestSpeed")
+                                client.sendText(receiver, "سرعت")
                                 elapsed_time = time.time() - start
-                                client.sendText(receiver, "%sdetik" % (elapsed_time))
+                                client.sendText(receiver, "%خب" % (elapsed_time))
                             elif 'spic' in text.lower():
                                 try:
                                     key = eval(msg.contentMetadata["MENTION"])
@@ -504,7 +507,7 @@ while True:
                                     for m in range(401, len(nama)):
                                         nm5 += [nama[m]]
                                     client.mention(receiver, nm5)             
-                                client.sendText(receiver, "Members :"+str(jml))
+                                client.sendText(receiver, "تعداد کاربران :"+str(jml))
                             elif text.lower() == 'ceksider':
                                 try:
                                     del cctv['point'][receiver]
@@ -520,13 +523,13 @@ while True:
                                     cctv['cyduk'][receiver]=False
                                     client.sendText(receiver, cctv['sidermem'][msg.to])
                                 else:
-                                    client.sendText(receiver, "Heh belom di Set")
+                                    client.sendText(receiver, "رید گرفته شد")
                             elif text.lower() == 'mode:self':
                                 mode = 'self'
-                                client.sendText(receiver, 'Mode Public Off')
+                                client.sendText(receiver, 'عمومی کردن خاموش شد')
                             elif text.lower() == 'mode:public':
                                 mode = 'public'
-                                client.sendText(receiver, 'Mode Public ON')
+                                client.sendText(receiver, 'عمومی کردن روشن شد')
                             elif text.lower() == 'restart':
                                 restart_program()
                       #                LOOK SIDER                  #                    
@@ -622,7 +625,7 @@ while True:
                                     client.sendMessage(msg.to, "Lurking belum diaktifkan ngapain di reset?")
                                     
                             elif text.lower() == 'lurking':
-                                tz = pytz.timezone("Asia/Jakarta")
+                                tz = pytz.timezone("Asia/Iran")
                                 timeNow = datetime.now(tz=tz)
                                 day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
                                 hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"]
@@ -688,7 +691,7 @@ while True:
                                     cmid = client.getContact(u).mid
                                     cstatus = client.getContact(u).statusMessage
                                     cpic = client.getContact(u).picturePath
-                                    client.sendText(receiver, 'Nama : '+cname+'\nMID : '+cmid+'\nStatus Msg : '+cstatus+'\nPicture : http://dl.profile.line.naver.jp'+cpic)
+                                    client.sendText(receiver, 'Nama : '+cname+'\nایدی (مید) : '+cmid+'\nاستاتوس : '+cstatus+'\nلینک عکس پروفایل : http://dl.profile.line.naver.jp'+cpic)
                                     client.sendMessage(receiver, None, contentMetadata={'mid': cmid}, contentType=13)
                                     if client.getContact(u).videoProfile != None:
                                         client.sendVideoWithURL(receiver, 'http://dl.profile.line.naver.jp'+cpic+'/vp.small')
@@ -761,9 +764,9 @@ while True:
                                     client.sendText(receiver, str(e))
                             elif text.lower() == 'speed':
                                 start = time.time()
-                                client.sendText(receiver, "TestSpeed")
+                                client.sendText(receiver, "سرعت ")
                                 elapsed_time = time.time() - start
-                                client.sendText(receiver, "%sdetik" % (elapsed_time))
+                                client.sendText(receiver, "%خوب" % (elapsed_time))
                             elif 'spic' in text.lower():
                                 try:
                                     key = eval(msg.contentMetadata["MENTION"])
