@@ -29,15 +29,14 @@ backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
 #====================================
 
-helpMessage =""" ༺༽།☤ⵓఃalish Joker ☤།༼༻
+helpMessage =""" ༺༽།☤ⵓః•ＡＬＩＳＨＪＯＫＥＲＢＯＴ☤།༼༻
 ╭════════╬♥╬════════╮
                      My Sticker :  Alish Eyes
-                     
 https://line.me/S/sticker/1949307
 LINE 2018
 ╰════════╬♥╬════════╯
 ╭════════╬♥╬════════╮
-║ freetimeine.mihanblog.com
+║♪「Myhelp」
 ║♪「Me」
 ║♪「 Mymid」
 ║♪「 Myname」
@@ -73,7 +72,7 @@ LINE 2018
 ║♪「 Lurking」
 ║♪「 lurking off」
 ║♪「 Lurking reset」
-║♪「 hi @」
+║♪「 kick @」
 ║♪「 Mode:self」
 ║♪「 Mode:public」
 ╰════════╬♥╬════════╯
@@ -104,9 +103,9 @@ read = {
 }
 
 myProfile = {
-	"displayName":"",
-	"statusMessage": hello Welcome To My friendlist !?"",
-	"pictureStatus"تنهایی لاتی تره ""
+	"displayName": "",
+	"statusMessage": "سلام خوش اومدی به ادد لیستم و ربات سلف هستم",
+	"pictureStatus": ""
 }
 
 myProfile["displayName"] = clientProfile.displayName
@@ -172,10 +171,10 @@ while True:
                                 client.sendMessage(msg.to,"مید\n" +  clientMID)
                             elif text.lower() == 'myname':
                                 me = client.getContact(clientMID)
-                                client.sendMessage(msg.to,"[اسم تو]\n" + me.displayName)
+                                client.sendMessage(msg.to,"[DisplayName]\n" + me.displayName)
                             elif text.lower() == 'mybio':
                                 me = client.getContact(clientMID)
-                                client.sendMessage(msg.to,"[استاتوس]\n" + me.statusMessage)
+                                client.sendMessage(msg.to,"[StatusMessage]\n" + me.statusMessage)
                             elif text.lower() == 'mypicture':
                                 me = client.getContact(clientMID)
                                 client.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/" + me.pictureStatus)
@@ -200,7 +199,7 @@ while True:
                                         cu = channel.getProfileCoverURL(ls)
                                         path = str(cu)
                                         image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-                                        client.sendMessage(msg.to,"اسم :\n" + contact.displayName + "\nمید :\n" + contact.mid + "\n\nاستا :\n" + contact.statusMessage)
+                                        client.sendMessage(msg.to,"Nama :\n" + contact.displayName + "\nMid :\n" + contact.mid + "\n\nBio :\n" + contact.statusMessage)
                                         client.sendImageWithURL(msg.to,image)
                                         client.sendImageWithURL(msg.to,path)
                             elif "cloneprofile" in msg.text.lower():
@@ -345,7 +344,7 @@ while True:
                                 except Exception as e:
                                     client.sendText(receiver, str(e))
 #============================================================#HELPSTART#=========================================================#
-                            elif text.lower() == 'h':
+                            elif text.lower() == '/help':
                                 client.sendText(msg.to,helpMessage)
                                 print ("[COMMAND] HELP")
                                 
@@ -390,7 +389,7 @@ while True:
                                 msgs+="\n═════════List Friend═════════\n\nTotal Friend : %i" % len(kontak)
                                 client.sendMessage(msg.to, msgs)
 #============================================================#ULTI STARTR#=========================================================#
-                            elif 'hi' in text.lower():
+                            elif 'hello' in text.lower():
                                    targets = []
                                    key = eval(msg.contentMetadata["MENTION"])
                                    key["MENTIONEES"] [0] ["M"]
