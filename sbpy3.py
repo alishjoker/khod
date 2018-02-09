@@ -104,7 +104,7 @@ read = {
 }
 
 myProfile = {
-	"displayName"Sky Bot"",
+	"displayName":"",
 	"statusMessage": hello Welcome To My friendlist !?"",
 	"pictureStatus"تنهایی لاتی تره ""
 }
